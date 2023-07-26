@@ -52,4 +52,12 @@ public class Main {
         list.sort(sorter);
         list.forEach(System.out::println);
     }
+
+    public static Set<Task> getUnion(List<Set<Task>> taskSetList) {
+        Set<Task> union = new HashSet<>();
+        taskSetList.forEach(s -> union.addAll(s));
+        return union;
+    }
+
+
 }
