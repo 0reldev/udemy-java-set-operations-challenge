@@ -64,4 +64,10 @@ public class Main {
         intersect.retainAll(set2);
         return intersect;
     }
+
+    public static Set<Task> getDifference(Set<Task> set1, Set<Task> set2) {
+        Set<Task> difference = new HashSet<>(set1);
+        difference.removeAll(set2);
+        return difference;
+    }
 }
